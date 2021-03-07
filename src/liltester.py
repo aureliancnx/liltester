@@ -104,8 +104,7 @@ def start_tester(path, delete):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--test", default=None,
-                        help="select a public test")
+    parser.add_argument("-t", "--test", default=None, help="select a public test")
     args = parser.parse_args()
     if args.test:
         file = "{0}.json".format(args.test)
