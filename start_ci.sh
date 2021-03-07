@@ -1,5 +1,5 @@
 # Install liltester
-git clone git@github.com:aureliancnx/liltester.git
+git clone https://github.com/aureliancnx/liltester.git
 
 # Move sources to main folder
 mv src/* ../
