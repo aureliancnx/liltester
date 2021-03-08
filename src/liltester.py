@@ -16,7 +16,7 @@ def run_process(args):
         out, err = process.communicate()
         excode = process.poll()
 
-        return excode, out, err, None
+        return excode, out.decode("utf-8"), err.decode("utf-8"), None
     except OSError as e:
         return None, None, None, e
 
